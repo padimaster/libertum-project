@@ -1,0 +1,101 @@
+.section4{
+    min-height: 150vh;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+  }
+
+  .titleSec4{
+    font-size: 36px;
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .boxFhaterTexts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .purposeBox{
+    display: flex;
+    height: 100px;
+    margin: 2%;
+  }
+  
+  .titleBox{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+    transform: rotate(-90deg);
+    height:80px;
+    width:80px;
+  } 
+  
+  .textPurpose{  
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    height:80px;
+    width:750px;
+    font-size: 24px;
+  }
+  
+  .missionBox{
+    display: flex;
+    height: 100px;
+    margin: 2%;
+  }
+  
+  .textMission{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    height:80px;
+    width:750px;
+    font-size: 24px;
+  }
+  
+  .visionBox{
+    display: flex;
+    height: 100px;
+    margin: 2%;
+  }
+  
+  .textVision{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    height:80px;
+    width:750px;
+    font-size: 24px;
+  }
+  
+  .boxRoadMap{
+    margin: 20px;
+  }
+  
+  .titleBoxRM{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+
+  .titleBoxRM h1{
+    font-size: 30px;
+  }
+  
+  .boxRoadMapImg{
+    text-align: center;
+  }
+  
+  .imageRoadMap{
+    max-width: 100%; 
+    height: auto;
+  }

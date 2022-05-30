@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+/*PopUpBePart*/
+
+.overlayBePart {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.overlayBePart.active {
+  visibility: visible;
+}
+
+.popUpBePart {
+  padding: 3%;
+  background: rgba(32, 32, 32, 0.95);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 13px;
+  color: #c0c0c0;
+  text-align: center;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
+}
+
+.popUpBePart.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popUpBePart h1 {
+  color: #F7931A;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+}
+
+.bePartTextContainer {
+  margin: auto;
+  width: 80%;
+}
+
+
+.popUpBePart p {
+  font-size: 20px;
+  margin: 25px;
+  font-family: 'Inter', 'arial';
+}
+
+.getInTouch {
+  border: none;
+  padding: 18px;
+  background-color: #F7931A;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.getInTouch a {
+  text-decoration: none;
+  color: white;
+}
+
+/*popUpWhatIs*/
+
+.overlayWhatIs {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlayWhatIs.active {
+  visibility: visible;
+}
+
+.popUpWhatIs {
+  padding: 3%;
+  width: 1000px;
+  background: rgba(32, 32, 32, 0.95);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 13px;
+  color: white;
+  text-align: center;
+  transition: 0.3s ease all;
+    transform: scale(0.7);
+    opacity: 0; 
+}
+
+.popUpWhatIs.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popUpWhatIs h1 {
+  color: #F7931A;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.paragraph-whatIs {
+  text-align: justify;
+}
+
+.popUpWhatIs p {
+  margin: 5px;
+  color: #c0c0c0;
+  font-size: 15px;
+  word-spacing: 3px;
+}
+
+.buttonBackWhatIs {
+  border: none;
+  padding: 18px;
+  background-color: #F7931A;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  margin-top: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/*popUpAbout*/
+
+.overlayAboutTheApplication {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlayAboutTheApplication.active {
+  visibility: visible;
+}
+
+.popUpAboutTheApplication {
+  padding: 3%;
+  width: 1000px;
+  background: rgba(32, 32, 32, 0.95);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 13px;
+  color: white;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0; 
+}
+
+.popUpAboutTheApplication.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popUpAboutTheApplication h1 {
+  color: #F7931A;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.popUpAboutTheApplication h3 {
+  margin: 15px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Inter', 'arial';
+}
+
+.popUpAboutTheApplication p {
+  margin: 10px;
+  font-weight: 400;
+  color: white;
+  font-family: 'Inter', 'arial';
+}
+
+.subtext {
+  color: #c0c0c0 !important;
+  margin-left: 20px;
+}
+
+.containerButtonAbout {
+  text-align: center;
+}
+
+.buttonBackAbout {
+  border: none;
+  padding: 18px;
+  background-color: #F7931A;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  margin-top: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/*popUpSend*/
+
+.overlaySend {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlaySend.active {
+  visibility: visible;
+}
+
+.popUpSend {
+  width: 620px;
+  background: rgba(32, 32, 32, 0.95);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 13px;
+  color: white;
+  text-align: center;
+}
+
+.popUpSend h1 {
+  color: #F7931A;
+  margin: 10px;
+}
+
+.popUpSend p {
+  margin: 5px;
+}
+
+.buttonSendPopUp {
+  border: none;
+  padding: 5px;
+  background-color: #F7931A;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px;
+  margin: 25px;
+}
+
+
+/*popUpterms-conditions*/
+
+.overlayterms-conditions {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.overlayterms-conditions.active {
+  visibility: visible;
+}
+
+.popUpterms-conditions {
+  width: 60%;
+  background: rgba(32, 32, 32, 1);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 32px;
+  color: white;
+  overflow-y: visible;
+  margin: 60px;
+  padding: 30px 50px;
+}
+
+.textScroll {
+  font-family: 'Inter';
+  overflow-y: scroll !important;
+  max-height: 450px;
+  width: 90%;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.textScroll-paragraph {
+  text-align: justify;
+}
+
+.textScroll-paragraph p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.textScroll::-webkit-scrollbar {
+  width: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  border-radius: 50px;
+  padding: 2%;
+  margin: 15px;
+}
+
+.textScroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 50px;
+}
+
+.textScroll h3 {
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.popUpterms-conditions h1 {
+  font-family: 'Inter';
+  color: #F7931A;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+  opacity: 0.8;
+}
+
+.containerButtonBack {
+  text-align: center;
+}
+
+.buttonBackterms-conditions {
+  border: none;
+  padding: 18px;
+  background-color: #F7931A;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Inter', 'arial';
+  font-weight: 400;
+  margin-top: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .popUpWhatIs {
+    padding: 3%;
+    width: 800px;
+    background: rgba(32, 32, 32, 0.95);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    overflow: scroll;
+    max-height: 500px;
+  }
+
+  .popUpAboutTheApplication {
+    padding: 3%;
+    width: 800px;
+    background: rgba(32, 32, 32, 0.95);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    overflow: scroll;
+    max-height: 500px;
+  }
+}

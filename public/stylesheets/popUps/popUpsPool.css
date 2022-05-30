@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:500');
+
+
+/* popUp Detail */
+
+.overlayDetailPool {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayDetailPool.active {
+    visibility: visible;
+    z-index: 2;
+}
+
+#openPopUpAssetsDetail {
+    cursor: pointer;
+}
+
+.popUpAssetsBorrowDetails {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 845px;
+    font-family: 'Inter';
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popUpAssetsBorrowDetails.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tableSupplyInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.grey {
+    color: #bfc3c9;
+}
+
+.tableBorrowInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 30px 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.rateModel {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    font-size: 14px;
+}
+
+.graphicRateModel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rateModel-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.containerButtons {
+    margin-top: 50px;
+}
+
+.warrantyPercentagesFather {
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    padding: 2%;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.warrantyPercentagesFather span {
+    color: green;
+}
+
+.warrantyPercentagesFather p {
+    color: #bfc3c9;
+}
+
+.black {
+    color: black !important;
+}
+
+.warrantyPercentagesFather div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.circle-morado {
+    height: 15px;
+    width: 15px;
+    background: purple;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.interest {
+    color: black !important;
+    font-size: 16px;
+}
+
+.rateModel p {
+    color: #bfc3c9;
+}
+
+.circle-orange {
+    height: 15px;
+    width: 15px;
+    background: rgb(216, 156, 45);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/*   popUp Manager Pool*/
+
+.overlayManagerPool {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayManagerPool.active {
+    visibility: visible;
+}
+
+.popUpManagerPool {
+    padding: 2%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 28px;
+    color: black;
+    width: 500px;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.popUp-title-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.popUpContent {
+    position: relative;
+
+}
+
+.popUpContent.active {
+    visibility: hidden;
+    opacity: 1;
+
+}
+
+.popUpContent2 {
+    visibility: hidden;
+    position: absolute;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+.popUpContent2.active {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+.popUpContent2-items {
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.popUpContent2-items-two {
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    padding: 5%;
+}
+
+.popUpContent2-items-two p {
+    color: #D1D5DB;
+}
+
+.grey-item {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 23px;
+    color: #D1D5DB;
+    margin: 5px 0;
+}
+
+
+/* contenido popUp*/
+
+/*Titulos*/
+.containerCross {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.titleManagerPopUp {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.subtitleManagerPopUp {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9CA3AF;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.subtitleManagerPopUp-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9CA3AF;
+    margin-top: 2%;
+    margin-bottom: 10px
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    margin-left: 30%;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #F7931A;
+}
+
+input:checked+.slider:before {
+    transform: translateX(25px);
+}
+
+/*contenedores from-to*/
+
+/*From*/
+.fromFather {
+    margin-bottom: 5%;
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+}
+
+.from_container {
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 5%;
+}
+
+.from_container p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B5563;
+}
+
+.buttonSwap_container {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+#button_swap_p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #D1D5DB;
+}
+
+.buttonSelectToken_container p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #D1D5DB;
+}
+
+.buttonLBM {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background: none;
+    gap: 3px;
+}
+
+.logoLBM {
+    width: 25px;
+    height: auto;
+}
+
+.fa-angle-down {
+    margin: 6px;
+    font-size: 13px !important;
+}
+
+/*To*/
+
+.toFather {
+    margin-top: 10%;
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+}
+
+.to_container {
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 5%;
+}
+
+.to_container p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B5563;
+}
+
+/*boton*/
+
+.buttonConfirmManagerPool {
+    font-size: 20px;
+    color: #F7931A;
+    width: 100%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+.buttonsCommitionContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.buttonsCommitionContainer button {
+    text-align: justify;
+    padding: 8px;
+    background: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #9CA3AF;
+}
+
+.buttonsCommitionContainer-two {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.buttonsCommitionContainer-two div {
+    padding: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #9CA3AF;
+    text-align: center;
+}
+
+/* ANIMACIONES */
+
+.popUpManagerPool.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 1600px) {
+    .popUpManagerPool {
+        padding: 2%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 28px;
+        color: black;
+        width: 450px;
+        height: 540px;
+        opacity: 0;
+        transition: 0.3s ease all;
+        transform: scale(0.7);
+    }
+    .toFather {
+        margin-top: 0;
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+    }
+    .popUpManagerPool.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .popUpContent2-items {
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+        padding: 3%;
+        margin-bottom: 3%;
+    }
+
+    .containerCross {
+        text-align: right;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .popUpContent2-items-two {
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+        padding: 2%;
+    }
+
+    .subtitleManagerPopUp {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9CA3AF;
+        margin-bottom: 3px;
+    }
+
+    .fromFather {
+        /* margin-bottom: 5%; */
+        margin-bottom: 3%;
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+    }
+
+    .from_container {
+        color: black;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 3%;
+    }
+
+    .buttonSwap_container {
+        display: flex;
+        margin-top: 3%;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .to_container {
+        color: black;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 3%;
+    }
+
+    .buttonsCommitionContainer button {
+        text-align: justify;
+        padding: 8px;
+        background: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+        border-radius: 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #9CA3AF;
+    }
+
+    .buttonsCommitionContainer-two div {
+        padding: 8px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #9CA3AF;
+        text-align: center;
+    }
+    .rateModel {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        font-size: 10px;
+    }
+    .tableBorrowInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 10px 0;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .interest {
+        color: black !important;
+        font-size: 14px;
+    }
+    .graphicRateModel img {
+        width: 350px;
+    }
+    .popUpAssetsBorrowDetails {
+        padding: 3%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: black;
+        width: 650px!important;
+        font-family: 'Inter';
+        transition: 0.3s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}

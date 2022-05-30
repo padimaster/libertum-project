@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/subPages/borrowing.css">
+    <link rel="stylesheet" href="/stylesheets/partials/walletPopUp.css">
+    <link rel="stylesheet" href="/stylesheets/popUps/borrowing/popUpsAssetsSupplied-borrow.css">
+    <link rel="stylesheet" href="/stylesheets/popUps/borrowing/PopUpsYourSupply-loans.css">
+    <link rel="stylesheet" href="/stylesheets/partials/alerts.css">
+    <link rel="icon" type="image/png" href="/images/Logo.png">
+    <title>Libertum</title>
+</head>
+
+<body>
+
+    <%- include('./partials/navbartwo.ejs') -%>
+
+        <div class="containerSupply_loans">
+            <div class="boxSupplies">
+                <div class="boxSupplies-first">
+                    <h1>Your Supplies</h1>
+                    <h3><span class="orange-title-box" id="openPopUpWithdraw">Withdraw</span></h3>
+                    <h3 id="openPopUpSupply">Supply</h3>
+                </div>
+                <div class="balanceApyWarrantyBox">
+                    <div class="balanceApy-box">
+                        <p>Balance <$0.01 </p>
+                                <img src="/images/Copy.png" alt="">
+                    </div>
+                    <div class="balanceApy-box">
+                        <p>APY <$0.01 </p>
+                                <img src="/images/Copy.png" alt="">
+                    </div>
+                    <div class="balanceApy-box">
+                        <p>Warranty <$0.01 </p>
+                                <img src="/images/Copy.png" alt="">
+                    </div>
+                </div>
+                <table class="table-BoxSupplies">
+                    <tr class="tr-one">
+                        <th>Assets</th>
+                        <th>Balance</th>
+                        <th>APY</th>
+                        <th>Warranty</th>
+                    </tr>
+                    <tr class="tr-two">
+                        <td>
+                            <p class="table-boxSupplies-LBM"><img src="/images/criptoLibertum.png" alt="">LBM</p>
+                        </td>
+                        <td>
+                            <p>0.00000010</p>
+                            <p class="tr-two-p-opacity">
+                                <$0.01 </p>
+                        </td>
+                        <td>
+                            <$0.01 </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <div class="boxSupplies">
+                <div class="boxSupplies-first">
+                    <h1>Your loans</h1>
+                    <h3><span class="orange-title-box" id="openPopUpYourLoansRefund">Refund</span></h3>
+                    <h3 id="openPopUpYourLoansBorrow">Borrow</h3>
+                </div>
+                <div class="balanceApyWarrantyBox-two">
+                    <div class="balanceApy-box">
+                        <p>Balance <$0.01 </p>
+                                <img src="/images/Copy.png" alt="">
+                    </div>
+                    <div class="balanceApy-box">
+                        <p>APY <$0.01 </p>
+                                <img src="/images/Copy.png" alt="">
+                    </div>
+                    <div class="balanceApy-box">
+                        <p>Borrowing Capacity used 100%</p>
+                        <img src="/images/Copy.png" alt="">
+                    </div>
+                </div>
+                <table class="table-BoxSupplies">
+                    <tr class="tr-one">
+                        <th>Assets</th>
+                        <th>Balance</th>
+                        <th>APY</th>
+                        <th>Warranty</th>
+                    </tr>
+                    <tr class="tr-two">
+                        <td>
+                            <p class="table-boxSupplies-LBM"><img src="/images/criptoLibertum.png" alt="">LBM</p>
+                        </td>
+                        <td>
+                            <p>0.00000010</p>
+                            <p class="tr-two-p-opacity">
+                                <$0.01 </p>
+                        </td>
+                        <td>
+                            <$0.01 </p>
+                        </td>
+                        <td>
+                            <p class="variable">
+                                VARIABLE
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+
+        </div>
+
+        <div class="containerAssets">
+
+            <div class="assetsSuplied">
+                <h1>Assets to be supplied</h1>
+
+                <table style="width:100%" class="tableBorrowing">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Wallet balance</th>
+                        <th>APY</th>
+                        <th>Warranty</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="title-crypto"><img src="/images/ETH.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">ETH</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td class="V-crypto">V</td>
+                        <td class="orange-title" id="openPopUpAssetSuppliedSupply">Supply</td>
+                        <td id="openPopUpAssetsDetail">Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/dai.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">DAI</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mkr.png" alt="copy" class="img-crypto"> </td>
+                        <td class="title-crypto">MKR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/PXR.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">PXR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mana.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">MANA</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/btc.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">BTC</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/ETH.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">ETH</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/dai.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">DAI</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mkr.png" alt="copy" class="img-crypto"> </td>
+                        <td class="title-crypto">MKR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/PXR.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">PXR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mana.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">MANA</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/btc.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">BTC</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="assetsBorrow">
+                <h1>Assets to borrow</h1>
+
+                <table style="width:100%" class="tableBorrowing">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Wallet balance</th>
+                        <th>APY</th>
+                        <th>Warranty</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="title-crypto"><img src="/images/ETH.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">ETH</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td class="V-crypto">V</td>
+                        <td class="orange-title" id="openPopUpYourLoansBorrowTable">Supply</td>
+                        <td id="openPopUpAssetsBorrowDetailTable">Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/dai.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">DAI</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mkr.png" alt="copy" class="img-crypto"> </td>
+                        <td class="title-crypto">MKR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/PXR.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">PXR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mana.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">MANA</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/btc.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">BTC</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/ETH.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">ETH</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/dai.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">DAI</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mkr.png" alt="copy" class="img-crypto"> </td>
+                        <td class="title-crypto">MKR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/PXR.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">PXR</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/mana.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">MANA</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+
+                    <tr>
+                        <td class="title-crypto"><img src="/images/btc.png" alt="copy" class="img-crypto"></td>
+                        <td class="title-crypto">BTC</td>
+                        <td>0.4965677</td>
+                        <td>
+                            <0.01% </td>
+                        <td>V</td>
+                        <td>Supply</td>
+                        <td>Details</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="needHelp">
+
+            <img src="/images/needHelp.png" alt="" class="needHelpIMG">
+
+        </div>
+
+        <!-- popUps Your supplies -->
+
+        <div class="overlayYourSuppliesWithDraw" id="overlayYourSuppliesWithDraw">
+            <div class="popUpYourSuppliesWithDraw" id="popUpYourSuppliesWithDraw">
+
+                <div class="title-crossContainerYourSuppliesWithDraw">
+                    <h1 class="tittleAssetsSupplyWithDraw">ETH supply</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeYourSuppliesWithDraw"></i></p>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw"> It's easy to withdraw your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p class="p-number-value">0.400000</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.01 <p>Balance 0.49900000
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw">Transaction summary</h3>
+
+                <div class="unwrapFather">
+
+                    <div class="slider-unwrapContainer">
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+
+                        <div class="unrwapText">
+                            <p>Unrwap AUETH (to withdraw ETH)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suppliesNumberContainer">
+                        <p>Restaurant supplies</p>
+                        <p class="valorRestaurantETH">0 ETH</p>
+                    </div>
+
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+
+                <div class="buttonWithdrawETHContainer">
+                    <button class="buttonWithdrawETH" id="confirmButtonYourSuppliesWithDraw" onclick="withDraw()">Withdraw ETH</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlayYourSuppliesSupply" id="overlayYourSuppliesSupply">
+            <div class="popUpYourSuppliesSupply" id="popUpYourSuppliesSupply">
+                <div class="title-crossContainer">
+                    <h1 class="tittleAssetsSupply">ETH supply</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeYourSuppliesSupply"></i></p>
+                </div>
+
+                <h3 class="subTittleAssetsSupply">Easy way to trade your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p class="p-number-value">0.400000</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.01 <p>Balance 0.49900000
+                        </p>
+
+                    </div>
+                </div>
+
+                <h3 class="subTittleAssetsSupply">Transaction summary</h3>
+
+                <div class="provideFather">
+
+                    <div class="provideContainer">
+                        <p>Provide APY</p>
+                    </div>
+
+                    <div class="apyPercentage">
+                        <p>0%</p>
+                    </div>
+
+                    <div class="collaterizationContainer">
+                        <p>Collaterization</p>
+                    </div>
+
+                    <div class="collaterizationState">
+                        <p>Enabled</p>
+                    </div>
+
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+                <div class="buttonSupplyETHContainer">
+                    <button class="buttonSupplyEHT" id="confirmSupply" onclick="supply()">Supply ETH</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- popUps Your Loans -->
+
+        <div class="overlayYourLoansRefund" id="overlayYourLoansRefund">
+            <div class="popUpYourLoansRefund" id="popUpYourLoansRefund">
+
+                <div class="title-crossContainerYourLoansRefund">
+                    <h1 class="tittleAssetsSupplyWithDraw">ETH refund</h1>
+                    <p><i class="fa-solid fa-xmark" id="closeYourLoansRefund"></i></p>
+                </div>
+
+                <h3 class="subTittYourLoansRefund">Easy way to supply your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p class="p-number-value">1.40000</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.01 <p>Balance 0.49900000 MAX
+                        </p>
+
+                    </div>
+                </div>
+
+                <h3 class="subTittYourLoansRefund">Transaction summary</h3>
+
+                <div class="remainingDebtFather">
+                    <p class="remainingDebtFather-p-one">Remaining debt</p>
+
+                    <p class="remainingDebtFather-p-two">$0.00</p>
+
+
+                    <p class="remainingDebtFather-p-three">Healt factor</p>
+
+
+                    <p class="remainingDebtFather-p-four">2.33</p>
+                    <p class="remainingDebtFather-p-five">Liquidation < 1.0 </p>
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+
+                <div class="buttonETHRefundContainer-REFUND">
+                    <button class="buttonETHRefund" id="confirmRefund" onclick="refund()">ETH refund</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="overlayYourLoansBorrow" id="overlayYourLoansBorrow">
+            <div class="popUpYourLoansBorrow" id="popUpYourLoansBorrow">
+
+                <div class="title-crossContainerYourSuppliesWithDraw">
+                    <h1 class="tittleAssetsSupplyWithDraw">Borrow ETH</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeYourLoansBorrow"></i></p>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw">Easy way to supply your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p class="p-number-value">0.000003</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.01 <p>Balance 0.49900000
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw">Transaction summary</h3>
+
+                <div class="unwrapFather">
+
+                    <div class="slider-unwrapContainer">
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+
+                        <div class="unrwapText">
+                            <p>Unrwap AUETH (to withdraw ETH)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suppliesNumberContainer">
+                        <p>Health Factor</p>
+                        <p class="remainingDebtFather-p-four">2.33</p>
+                    </div>
+                    <p class="liquitadion-borrow">Liquidation < 1.0 </p>
+
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+
+                <div class="buttonWithdrawETHContainer">
+                    <button class="buttonWithdrawETH-borrow" id="confirmBorrow" onclick="borrow()">Borrow ETH</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- popUps assets supplied  -->
+
+        <div class="overlayAssetSuppliedSupply" id="overlayAssetSuppliedSupply">
+
+            <div class="popUpAssetsSuppliedSupply" id="popUpAssetsSuppliedSupply">
+                <div class="title-crossContainer">
+                    <h1 class="tittleAssetsSupply">ETH supply</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeAssetsSuppliedSupply"></i></p>
+                </div>
+
+                <h3 class="subTittleAssetsSupply">Easy way to trade your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p>0.400000</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.00 <p>Balance 0.49900000
+                        </p>
+
+                    </div>
+                </div>
+
+                <h3 class="subTittleAssetsSupply">Transaction summary</h3>
+
+                <div class="provideFather">
+
+                    <div class="provideContainer">
+                        <p>Provide APY</p>
+                    </div>
+
+                    <div class="apyPercentage">
+                        <p>0%</p>
+                    </div>
+
+                    <div class="collaterizationContainer">
+                        <p>Collaterization</p>
+                    </div>
+
+                    <div class="collaterizationState">
+                        <p>Enabled</p>
+                    </div>
+
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+                <div class="buttonSupplyETHContainer">
+                    <button class="buttonSupplyEHT" id="confirmSupplySuppliedPopUp" onclick="supply()">Supply
+                        ETH</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="overlayAssetsSuppliedDetail" id="overlayAssetsSuppliedDetail">
+            <div class="popUpAssetsSuppliedDetail" id="popUpAssetsSuppliedDetail">
+
+                <div class="title-crossContainer">
+                    <h1 class="tittleAssetsSupply">Configuration and reservation status</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeAssetsSuppliedDetail"></i></p>
+                </div>
+                <div class="tableSupplyInfo">
+                    <div>
+                        <p>Supply info</p>
+                    </div>
+                    <div>
+                        <p class="grey">Total supplied</p>
+                        <p>80.75</p>
+                        <p class="grey">$113.05</p>
+                    </div>
+                    <div>
+                        <p class="grey">APY</p>
+                        <p>934.86%</p>
+                    </div>
+                    <div class="containerButtons">
+                        <button class="orange-title-box" id="supply-details">Supply</button>
+                        <button class="grey-title-box" id="borrow-details">Borrowing</button>
+                    </div>
+                </div>
+
+
+
+                <div class="warrantyPercentagesFather">
+                    <p class="black">Warranty use: <span>V</span> can be warranty</p>
+                    <div>
+                        <p>Max LTV <span class="black">65.00%</span></p>
+                        <p>Liquidation threshold <span class="black">70.00%</span></p>
+                        <p>Liquidation penalty <span class="black">10.00%</span></p>
+                    </div>
+                </div>
+
+                <div class="tableBorrowInfo">
+                    <div>Borrow info</div>
+                    <div>
+                        <p class="grey">Total borrowed</p>
+                        <p>79.33</p>
+                        <p class="grey">$111.06</p>
+                    </div>
+                    <div>
+                        <p class="grey">APY, variable</p>
+                        <p>1,856.25%</p>
+                    </div>
+
+                </div>
+
+                <div class="rateModel">
+                    <p class="interest">Interest rate model</p>
+                    <div class="rateModel-box">
+                        <div class="circle-morado"></div>
+                        <p>Utilization rate</p>
+                    </div>
+                    <div class="rateModel-box">
+                        <div class="circle-orange"></div>
+                        <p>Borrow APE, variable</p>
+                    </div>
+                </div>
+
+                <div class="graphicRateModel">
+                    <img src="/images/graphicRateModel.png" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- popUps assets borrow -->
+
+        <div class="overlayAssetsBorrowSupply" id="overlayAssetsBorrowSupply">
+            <div class="popUpAssetsBorrowSupply" id="popUpAssetsBorrowSupply">
+
+                <div class="title-crossContainerYourSuppliesWithDraw">
+                    <h1 class="tittleAssetsSupplyWithDraw">Borrow ETH</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeAssetsBorrowSupply"></i></p>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw">Easy way to supply your tokens</h3>
+
+                <div class="amountFather">
+                    <div class="amountContainer">
+                        <p>Amount</p>
+                    </div>
+
+                    <div class="buttonAndValueContainer">
+                        <p class="p-number-value">0.000003</p>
+                        <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM</button>
+                    </div>
+
+                    <div class="balanceContainer">
+                        <p>
+                            <$0.01 <p>Balance 0.49900000
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subTittleYourSuppliesWithDraw">Transaction summary</h3>
+
+                <div class="unwrapFather">
+
+                    <div class="slider-unwrapContainer">
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+
+                        <div class="unrwapText">
+                            <p>Unrwap AUETH (to withdraw ETH)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suppliesNumberContainer">
+                        <p>Health Factor</p>
+                        <p class="remainingDebtFather-p-four">2.33</p>
+                    </div>
+                    <p class="liquitadion-borrow">Liquidation < 1.0 </p>
+
+                </div>
+
+                <div class="gasChangeFather">
+                    <div class="gasChange-box">
+                        <img src="/images/gasIcon.png" alt="icon">
+                        <$0.01 <p>Normal</p>
+                            <img src="/images/settingIcon.png" alt="icon">
+                    </div>
+
+                    <h5>The price of gas may change due to price fluctuations</h5>
+                </div>
+
+
+                <div class="buttonWithdrawETHContainer">
+                    <button class="buttonWithdrawETH">Borrow ETH</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlayAssetsBorrowDetails" id="overlayAssetsBorrowDetails">
+            <div class="popUpAssetsBorrowDetails" id="popUpAssetsBorrowDetails">
+                <div class="title-crossContainer">
+                    <h1 class="tittleAssetsSupply">Configuration and reservation status</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeAssetsBorrowDetails"></i></p>
+                </div>
+                <div class="tableSupplyInfo">
+                    <div>
+                        <p>Supply info</p>
+                    </div>
+                    <div>
+                        <p>Total supplied</p>
+                        <p>80.75</p>
+                        <p>$113.05</p>
+                    </div>
+                    <div>
+                        <p>APY</p>
+                        <p>934.86%</p>
+                    </div>
+                    <div class="containerButtons">
+                        <button class="orange-title-box">Supply</button>
+                        <button class="grey-title-box">Borrowing</button>
+                    </div>
+                </div>
+
+
+
+                <div class="warrantyPercentagesFather">
+                    <p class="black">Warranty use: <span>V</span> can be warranty</p>
+                    <div>
+                        <p>Max LTV <span class="black">65.00%</span></p>
+                        <p>Liquidation threshold <span class="black">70.00%</span></p>
+                        <p>Liquidation penalty <span class="black">10.00%</span></p>
+                    </div>
+                </div>
+
+                <div class="tableBorrowInfo">
+                    <div>Borrow info</div>
+                    <div>
+                        <p>Total borrowed</p>
+                        <p>79.33</p>
+                        <p>1,856.25%</p>
+                    </div>
+                    <div>
+                        <p>APY, variable</p>
+                        <p>1,856.25%</p>
+                    </div>
+
+                </div>
+
+                <div class="rateModel">
+                    <p class="interest">Interest rate model</p>
+                    <div class="rateModel-box">
+                        <div class="circle-morado"></div>
+                        <p>Utilization rate</p>
+                    </div>
+                    <div class="rateModel-box">
+                        <div class="circle-orange"></div>
+                        <p>Borrow APE, variable</p>
+                    </div>
+                </div>
+
+                <div class="graphicRateModel">
+                    <img src="/images/graphicRateModel.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- ALERTS POP UPS -->
+
+        <div class="overlayAlertWithdraw" id="overlayAlertWithdraw">
+            <div class="popUpAlertWithdraw" id="popUpAlertWithdraw">
+                <div class="crossContainer">
+                    <i class="fa-solid fa-xmark" id="crossAlertWithdraw"></i>
+                </div>
+
+                <div class="containerElements">
+                    <img src="/images/succes.png" alt="succesLogo">
+                    <h3 class="grayText">¡Ready!</h3>
+                    <p class="subTextAlert">Your ETH widthdrawal is 0.0001110!</p>
+                </div>
+                <button class="confirmWithdrawButton" id="confirmAlertWithdraw">Confirm</button>
+            </div>
+        </div>
+
+        <div class="overlayAlertSupply" id="overlayAlertSupply">
+            <div class="popUpAlertSupply" id="popUpAlertSupply">
+                <div class="crossContainer">
+                    <i class="fa-solid fa-xmark" id="crossAlertSupply"></i>
+                </div>
+
+                <div class="containerElements">
+                    <img src="/images/succes.png" alt="succesLogo">
+                    <h3 class="grayText">¡Ready!</h3>
+                    <p class="subTextAlert">Your ETH supply is 0.0001110!</p>
+                </div>
+                <button class="confirmSupplyButton" id="confirmAlertSupply">Confirm</button>
+            </div>
+        </div>
+
+        <div class="overlayAlertBorrow" id="overlayAlertBorrow">
+            <div class="popUpAlertBorrow" id="popUpAlertBorrow">
+                <div class="crossContainer">
+                    <i class="fa-solid fa-xmark" id="crossAlertBorrow"></i>
+                </div>
+
+                <div class="containerElements">
+                    <img src="/images/succes.png" alt="succesLogo">
+                    <h3 class="grayText">¡Ready!</h3>
+                    <p class="subTextAlert">Your ETH borrow is 0.0001110!</p>
+                </div>
+                <button class="confirmBorrowButton" id="confirmAlertBorrow">Confirm</button>
+            </div>
+        </div>
+
+        <div class="overlayAlertRefund" id="overlayAlertRefund">
+            <div class="popUpAlertRefund" id="popUpAlertRefund">
+                <div class="crossContainer">
+                    <i class="fa-solid fa-xmark" id="crossAlertRefund"></i>
+                </div>
+
+                <div class="containerElements">
+                    <img src="/images/succes.png" alt="succesLogo">
+                    <h3 class="grayText">¡Ready!</h3>
+                    <p class="subTextAlert">Your ETH refund is 0.0001110!</p>
+                </div>
+                <button class="confirmRefundButton" id="confirmAlertRefund">Confirm</button>
+            </div>
+        </div>
+
+
+
+        <!-- popUps Your supplies links -->
+        <script src="/javascripts/borrowingPopUps/popUpYourSuppliesWithDraw.js"></script>
+        <script src="/javascripts/borrowingPopUps/popUpYourSuppliesSupply.js"></script>
+        <!-- popUps Your Loans links -->
+        <script src="/javascripts/borrowingPopUps/popUpYourLoansRefund.js"></script>
+        <script src="/javascripts/borrowingPopUps/popUpYourLoansBorrow.js"></script>
+        <!-- popUps assets supplied links -->
+        <script src="/javascripts/borrowingPopUps/popUpAssetSuppliedSupply.js"></script>
+        <script src="/javascripts/borrowingPopUps/popUpAssetsSuppliedDetail.js"></script>
+        <!-- popUps assets borrow links -->
+        <script src="/javascripts/borrowingPopUps/popUpAssetBorrowSupply.js"></script>
+        <script src="/javascripts/borrowingPopUps/popUpAssetsBorrowDetail.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/javascripts/sweetAlert.js"></script>
+
+</body>
+
+</html>

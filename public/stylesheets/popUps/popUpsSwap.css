@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:500');
+
+/*Swap Config*/
+
+.overlaySwapConfig {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlaySwapConfig.active {
+    visibility: visible;
+}
+
+.popUpSwapConfig {
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.containerCross{
+    text-align: right;
+}
+
+.toleranceList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.toleranceList button {
+    padding: 10px;
+    height: 48px;
+    width: 80px;
+    font-family: 'Montserrat';
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    border-radius: 15px;
+}
+
+.toleranceList button:hover{
+    background-color: #FFF1F2;
+}
+
+.placeholderButton{
+    width: 100%;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: #F9FAFB;
+}
+
+.placeholderButton:hover{
+    background-color: #FFF1F2;
+}
+
+.slippage {
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    color: black;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+
+.slippage img {
+    margin-left: 5px;
+}
+
+.title-setting {
+    font-family: 'Montserrat';
+    margin: 10px;
+    color: #374151;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.listTime {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    align-items: center;
+}
+
+.placeholderMinutes{
+    background: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    border-radius: 15px;
+    width: 165px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grey {
+    color: #c0c0c0;
+    font-weight: bold;
+    background: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    border-radius: 15px;
+
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    margin-left: 30%;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #F7931A;
+}
+
+input:checked+.slider:before {
+    transform: translateX(25px);
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.getInTouch {
+    border: none;
+    padding: 18px;
+    background-color: #F7931A;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Inter', 'arial';
+    font-weight: 400;
+}
+
+/*SelectFrom*/
+
+.overlaySelectFrom {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlaySelectFrom.active {
+    visibility: visible;
+}
+
+.popUpSelectFrom {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 500px;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.containerTitleSelectFrom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.popUpSelectFrom h1 {
+    font-family: 'Montserrat';
+    color: #374151;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.searchBarContainer {
+    text-align: left;
+}
+
+#searchBar {
+    font-size: 18px;
+    border: none;
+    width: 300px;
+    padding: 5px;
+}
+
+.listCrypto {
+    margin: 10px;
+    overflow-y: visible;
+    overflow-y: scroll !important;
+    max-height: 500px;
+}
+
+.containerConfirmSelectFrom{
+    text-align: center;
+}
+
+.closeSelectFrom {
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+.closeSelectFrom:focus {
+    background-color: #F7931A;
+    color: white;
+}
+
+/*SelectTo*/
+.overlaySelectTo {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlaySelectTo.active {
+    visibility: visible;
+}
+
+.popUpSelectTo {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    text-align: center;
+    width: 500px;
+}
+
+.containerTitleSelectTo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.popUpSelectTo h1 {
+    color: #F7931A;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: 'Inter', 'arial';
+    font-weight: 400;
+}
+
+.SelectToText {
+    margin: auto;
+    width: 80%;
+}
+
+.popUpSelectTo p {
+    font-size: 20px;
+    margin: 25px;
+    font-family: 'Inter', 'arial';
+}
+
+.getInTouch:focus{
+    background-color: #F7931A;
+}
+
+/*ANIMACIONES*/
+
+.popUpSwapConfig.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpSelectFrom.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 1600px) {
+    .popUpSelectFrom {
+        padding: 3%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: black;
+        width: 450px;
+    }
+    .listCrypto {
+        margin: 10px;
+        overflow-y: visible;
+        overflow-y: scroll !important;
+        max-height: 300px;
+    }
+}

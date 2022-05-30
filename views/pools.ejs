@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/Logo.png">
+    <link rel="stylesheet" href="/stylesheets/subPages/pool.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7a7476959.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/popUps/popUpsPool.css">
+    <link rel="stylesheet" href="/stylesheets/partials/walletPopUp.css">
+    <link rel="stylesheet" href="/stylesheets/partials/alerts.css">
+    <link rel="stylesheet" href="/stylesheets/popUps/borrowing/popUpsAssetsSupplied-borrow.css">
+    <link rel="stylesheet" href="/stylesheets/popUps/borrowing/PopUpsYourSupply-loans.css">
+    <title>Libertum</title>
+</head>
+
+<body>
+    <%- include('./partials/navbartwo.ejs') -%>
+
+        <div class="poolsContainer">
+            <div class="poolFather">
+                <h1>Pools</h1>
+                <p class="subTextPoolTittle"><input type="search" name="" id="searchBar"
+                        placeholder="Find name or insert adress"> <i class="fa-solid fa-ellipsis libertum"></i></p>
+            </div>
+
+            <div class="">
+
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                        <th>APR</th>
+                        <th>Pool value</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><img src="/images/bitcoinLibertum.png"></td>
+                        <td class="nameCrypto">Bitcoin </td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td id="managerPopUpOpen" class="manager-detail">Manager</td>
+                        <td id="openDetails" class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/ETHLibertum.png"></td>
+                        <td class="nameCrypto">Ethereum </td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/moneroLibertum.png"></td>
+                        <td class="nameCrypto">Monero</td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/someCoinLibertum.png"></td>
+                        <td class="nameCrypto">Somecoin</td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/cardanoLibertum.png"></td>
+                        <td class="nameCrypto">Cardano</td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/chianLinkLibertum.png"></td>
+                        <td class="nameCrypto">ChianLink</td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/coinLibertum.png"></td>
+                        <td class="nameCrypto">Coin</td>
+                        <td>2.34%</td>
+                        <td>2,340.32</td>
+                        <td class="manager-detail">Manager</td>
+                        <td class="manager-detail">Details</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+        <div class="needHelp">
+            <img src="/images/needHelp.png" alt="" class="needHelpIMG">
+        </div>
+
+        <div class="overlayManagerPool" id="overlayManagerPool">
+            <div class="popUpManagerPool" id="popUpManagerPool">
+                <div class="containerCross">
+                    <i class="fa-solid fa-xmark" id="closeManagerPull"></i>
+                </div>
+
+                <div class="popUp-title-button">
+                    <h1 class="titleManagerPopUp" id="titleManagerPopUp">Add liquidity
+                    
+                    </h1>
+                    <label class="switch">
+                        <input type="checkbox" onclick="isChecked()" id="changeContent">
+                        <span class="slider" ></span>
+                    </label>
+                </div>
+                
+
+                <h3 class="subtitleManagerPopUp">Easy way to trade your tokens</h3>
+
+                <div class="popUpContent" id="popUpManagerPoolContent">
+
+                    <div class="fromFather">
+
+                        <div class="from_container">
+                            <p>From</p>
+                        </div>
+
+                        <div class="buttonSwap_container">
+                            <p id="button_swap_p">0.0</p>
+                            <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM<i
+                                    class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="toFather">
+
+                        <div class="to_container">
+                            <p>To</p>
+                        </div>
+
+                        <div class="buttonSwap_container">
+                            <p id="button_swap_p">0.0</p>
+                            <button class="buttonLBM"><img src="/images/logoBTC.png" class="logoLBM">BTC<i
+                                    class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="choseCommitionContainer">
+                        <h3 class="subtitleManagerPopUp-two">Chose the comision of the liquidity provieder</h3>
+                    </div>
+
+                    <div class="buttonsCommitionContainer">
+                        <button>
+                            <h2>
+                                0.05%
+                            </h2>
+                            <h2>
+                                Fees
+                            </h2>
+                            <p>
+                                The best level for stablecoins
+                            </p>
+                        </button>
+                        <button>
+                            <h2>
+                                0.03%
+                            </h2>
+                            <h2>
+                                Fees
+                            </h2>
+                            <p>
+                                The best level for most pairs
+                            </p>
+                        </button>
+                        <button>
+                            <h2>
+                                1%
+                            </h2>
+                            <h2>
+                                Fees
+                            </h2>
+                            <p>
+                                The best level for exotic pairs
+                            </p>
+                        </button>
+                    </div>
+                    <div class="buttonsCommitionContainer-two">
+                        <div>
+                            <h2>
+                                0.080257452
+                            </h2>
+                            <p>
+                                LBM to BTC
+                            </p>
+                        </div>
+                        <div>
+                            <h2>
+                                0.000254458
+                            </h2>
+                            <p>
+                                BTC to LBM
+                            </p>
+
+                        </div>
+                        <div>
+                            <h2>
+                                -
+                            </h2>
+                            <p>
+                                Pool Portion
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="popUpContent2" id="popUpManagerPoolContent2">
+
+                        <div class="fromFather">
+
+                            <div class="from_container">
+                                <p>From</p>
+                            </div>
+    
+                            <div class="buttonSwap_container">
+                                <p id="button_swap_p">0.0</p>
+                                <button class="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM<i
+                                        class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="popUpContent2-items">
+                            <p>Pool</p>
+                            <p class="grey-item">0x75c2...ff34</p>
+                            <p>Total Liquidity</p>
+                            <p class="grey-item">200.0256 LBM /0.2004765625 BTC</p>
+                        </div>
+                        <div class="popUpContent2-items-two">
+                            <p>Tokens can be redeemed by removing liquidity</p>
+                            <p>
+                                The number of redeemed tokens may change due to price fluctuactions
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="buttonConfirmManagerPool" id="buttonConfirmManagerPool" onclick="supply()">Confirm</button>
+
+            </div>
+        </div>
+
+        <div class="overlayAlertPool" id="overlayAlertPool">
+            <div class="popUpAlertPool" id="popUpAlertPool">
+                <div class="crossContainer">
+                <i class="fa-solid fa-xmark" id="crossAlertPool"></i>
+            </div>
+
+            <div class="containerElements">
+                <img src="/images/succes.png" alt="succesLogo">
+                <h3 class="grayText">¡Ready!</h3>
+                <p class="subTextAlert">Your ETH supply is 0.0001110!</p>
+            </div>
+                <button class="confirmPoolButton" id="confirmAlertPool">Confirm</button>
+            </div>
+        </div>
+
+        <div class="overlayDetailPool" id="overlayDetailPool">
+            <div class="popUpAssetsBorrowDetails" id="popUpDetailPool">
+
+                <div class="title-crossContainer">
+                    <h1 class="tittleAssetsSupply">Configuration and reservation status</i></h1>
+                    <p><i class="fa-solid fa-xmark" id="closeDetailsPool"></i></p>
+                </div>
+                <div class="tableSupplyInfo">
+                    <div>
+                        <p>Supply info</p>
+                    </div>
+                    <div>
+                        <p class="grey">Total supplied</p>
+                        <p>80.75</p>
+                        <p class="grey">$113.05</p>
+                    </div>
+                    <div>
+                        <p class="grey">APY</p>
+                        <p>934.86%</p>
+                    </div>
+                    <div class="containerButtons">
+                        <button class="orange-title-box" id="addLiquidityDetails">Supply</button>
+                        <button class="grey-title-box" id="removeLiquidtyDetails">Withdraw</button>
+                    </div>
+                </div>
+
+
+
+                <div class="warrantyPercentagesFather">
+                    <p class="black">Warranty use: <span>V</span> can be warranty</p>
+                    <div>
+                        <p>Max LTV <span class="black">65.00%</span></p>
+                        <p>Liquidation threshold <span class="black">70.00%</span></p>
+                        <p>Liquidation penalty <span class="black">10.00%</span></p>
+                    </div>
+                </div>
+
+                <div class="tableBorrowInfo">
+                    <div>Borrow info</div>
+                    <div>
+                        <p class="grey">Total borrowed</p>
+                        <p>79.33</p>
+                        <p class="grey">$111.06</p>
+                    </div>
+                    <div>
+                        <p class="grey">APY, variable</p>
+                        <p>1,856.25%</p>
+                    </div>
+
+                </div>
+
+                <div class="rateModel">
+                    <p class="interest">Interest rate model</p>
+                    <div class="rateModel-box">
+                        <div class="circle-morado"></div>
+                        <p>Utilization rate</p>
+                    </div>
+                    <div class="rateModel-box">
+                        <div class="circle-orange"></div>
+                        <p>Borrow APE, variable</p>
+                    </div>
+                </div>
+
+                <div class="graphicRateModel">
+                    <img src="/images/graphicRateModel.png" alt="">
+                </div>
+
+
+            </div>
+
+        <script src="/javascripts/poolPopUps/popUpManagerPool.js"></script>
+        <script src="/javascripts/borrowingPopUps/popUpAssetsSuppliedDetail.js"></script>
+        <script src="/javascripts/poolPopUps/detail.js"></script>
+
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/javascripts/sweetAlert.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.listCryptoContainer{
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.listCryptoContainer p{
+    display: flex;
+    align-items:center ;
+    margin: 20px;
+    font-family: 'Montserrat';
+}
+
+.img-crypto {
+    margin-right: 8px;
+}

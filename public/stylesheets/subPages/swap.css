@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+body {
+    background-color: #c0c0c0;
+}
+
+.popup-class {
+    border-radius: 16px!important;
+    font-family: 'Inter'!important;
+}
+
+
+
+.fatherContainer{
+    margin-top: 50px;
+}
+
+.containterSwap_Graphic{
+    margin-top: 3%;
+    width: 80%; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphicContainer{
+    margin: 10px;
+}
+
+.imgGraphic{
+    width: 700px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.swapContainer{
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+    border-radius: 28px;
+    background-color: white;
+    padding: 3%;
+}
+
+.title-gear_Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.title-gear_Container h1 {
+    font-weight: 100;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #374151;
+}
+
+.configButton{
+    cursor: pointer;
+}
+
+.subTextSwapContainer{
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.subTextSwapContainer p {
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+.fromFather{
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+}
+
+.from_container{
+    color: black;
+    font-size: 18px;
+    margin-left:10px;
+    margin-top: 5%;
+}
+
+.from_container p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B5563;
+}
+
+.buttonSwap_container{
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+#button_swap_p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+    border: none;
+    width: 45px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#button_swap_pFrom{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+    border: none;
+    width: 45px;
+    text-align: center;
+}
+
+
+/*Sacar flechitas placeholder*/
+/*chrome*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/*Firefox:*/
+input[type="number"] {
+-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
+
+/* */
+
+
+.buttonSelectToken_container p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #D1D5DB;
+}
+
+.buttonLBM{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+.logoLBM{
+    width:25px;
+    height: auto;
+}
+
+.fa-angle-down{
+    margin: 6px;
+    font-size: 13px!important;
+}
+
+.arrowDownTo{
+    text-align: center;
+    color: black;
+    margin: 5%;
+}
+
+.toFather{
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+}
+
+.toFather p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B5563;
+    margin: 15px;
+}
+
+.buttonSelectToken_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.buttonSelect{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #F7931A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    margin: 15px;
+}
+
+.buttonConfirm_container{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonConfirm{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+.buttonConfirm:focus{
+    background-color: #F7931A;
+    color: white;
+}
+
+.containerInfoSwap{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+
+}
+
+.infoSwap{
+    border-radius: 20px;
+    height: 125px;
+    width: 520px;
+    background-color: white;
+    margin: 10px;
+    margin-right: 10%;
+}
+
+.infoLines{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.impactOnPrices{
+    color: green;
+}
+
+.needHelp{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.needHelpIMG{
+    margin: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+    .imgGraphic {
+        width: 600px;
+        height: auto;
+        border-radius: 12px;
+    }
+    
+    .swapContainer {
+        width: 35%;
+        height: 500px;
+        margin: 10px;
+        border-radius: 28px;
+        background-color: white;
+        padding: 3%;
+    }
+    .infoSwap {
+        border-radius: 20px;
+        height: 125px;
+        /* width: 520px; */
+        width: 382px;
+        background-color: white;
+        margin: 10px;
+        margin-right: 10.7%;
+    }
+}

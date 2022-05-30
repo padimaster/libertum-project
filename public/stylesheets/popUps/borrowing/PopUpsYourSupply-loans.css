@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:500');
+
+
+/*PopUp Your Supplies WithDraw*/
+
+.overlayYourSuppliesWithDraw {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayYourSuppliesWithDraw.active {
+    visibility: visible;
+    z-index: 2;
+}
+
+.popUpYourSuppliesWithDraw {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 500px;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.popUpYourSuppliesWithDraw.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Titulos Your Supplies WithDraw*/
+
+.title-crossContainerYourSuppliesWithDraw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tittleAssetsSupplyWithDraw {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #374151;
+}
+
+.subTittleYourSuppliesWithDraw {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #9CA3AF;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+/*containers Your Supplies WithDraw*/
+
+.unwrapFather {
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+}
+
+/*Contenido UnwrapFather*/
+
+.slider-unwrapContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+}
+
+.suppliesNumberContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+.valorRestaurantETH {
+    color: green;
+}
+
+/*button Withdraw*/
+
+.buttonWithdrawETHContainer {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonWithdrawETH {
+    font-size: 20px;
+    color: #F7931A;
+    width: 98%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+
+/*PopUp Your Supplies Supply*/
+
+.overlayYourSuppliesSupply {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayYourSuppliesSupply.active {
+    visibility: visible;
+    z-index: 2;
+}
+
+.popUpYourSuppliesSupply {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 500px;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.popUpYourSuppliesSupply.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/*PopUp Your Loans Refund*/
+
+.overlayYourLoansRefund {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayYourLoansRefund.active {
+    visibility: visible;
+    z-index: 2;
+}
+
+.popUpYourLoansRefund {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 500px;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+    opacity: 0; 
+}
+
+.popUpYourLoansRefund.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Titulos Your Loans Refund*/
+
+.title-crossContainerYourLoansRefund {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subTittYourLoansRefund {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #9CA3AF;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+/*containers Your Loans Refund*/
+
+.remainingDebtFather {
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    padding: 10px;
+}
+
+.remainingDebtFather-p-two {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.remainingDebtFather-p-four {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #F99B17;
+}
+
+.remainingDebtFather-p-five {
+    opacity: 0.8;
+    color: grey;
+}
+
+
+
+/*button Your Loans Refund ETH */
+
+.buttonETHRefundContainer {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonETHRefundContainer-REFUND {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonETHRefund {
+    font-size: 20px;
+    color: #F7931A;
+    width: 98%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+
+/*PopUp  Your Loans Borrow */
+
+.overlayYourLoansBorrow {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayYourLoansBorrow.active {
+    visibility: visible;
+    z-index: 2;
+}
+
+.popUpYourLoansBorrow {
+    padding: 3%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: black;
+    width: 500px;
+}
+
+@media screen and (max-width: 1600px) {
+    .popUpYourSuppliesWithDraw {
+        padding: 3%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: black;
+        width: 450px;
+        opacity: 0;
+        transition: 0.3s ease all;
+        transform: scale(0.7);
+        height: 560px;
+    }
+    .gasChangeFather {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+        text-align: center;
+        color: #9CA3AF;
+        padding: 5px;
+    }
+    .buttonWithdrawETHContainer {
+    
+        text-align: center;
+    
+    
+        margin: auto;
+    
+    }
+    .slider-unwrapContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+        align-items: center;
+        gap: 30px;
+    }
+    .provideFather {
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        border: 0.6px solid #E5E7EB;
+        padding: 5px;
+    }
+    .subTittleAssetsSupply {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        color: #9CA3AF;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .popUpYourSuppliesSupply {
+        padding: 3%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: black;
+        width: 450px;
+        height: 560px;
+        opacity: 0;
+        transition: 0.3s ease all;
+        transform: scale(0.7);
+    }
+    .buttonSupplyETHContainer {
+        text-align: center;
+        margin-top: 0%;
+    }
+    .popUpYourLoansRefund {
+        padding: 3%;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: black;
+        width: 450px;
+        transition: 0.3s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+        height: 540px;
+    }
+    .buttonETHRefundContainer-REFUND {
+        margin-top: 0%;
+        text-align: center;
+    }
+}

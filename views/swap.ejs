@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/Logo.png">
+  <title>Libertum</title>
+  <link rel="stylesheet" href="/stylesheets/subPages/swap.css">
+  <link rel="stylesheet" href="/stylesheets/popUps/popUpsSwap.css">
+  <link rel="stylesheet" href="/stylesheets/partials/walletPopUp.css">
+  <link rel="stylesheet" href="/stylesheets/partials/alerts.css">
+  <script src="https://kit.fontawesome.com/a7a7476959.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <%- include('./partials/navbartwo.ejs') -%>
+
+    <div class="fatherContainer">
+
+      <div class="containterSwap_Graphic">
+
+        <div class="graphicContainer">
+
+          <img src="/images/graphic.png" alt="" class="imgGraphic">
+
+        </div>
+
+        <div class="swapContainer">
+
+          <div class="title-gear_Container">
+            <h1>Swap</h1>
+            <img src="/images/setting.png" id="configButton" class="configButton">
+          </div>
+          <div class="subTextSwapContainer">
+            <p>Easy way to trade you tokens</p>
+          </div>
+
+          <div class="fromFather">
+
+            <div class="from_container">
+              <p>From</p>
+            </div>
+
+            <div class="buttonSwap_container">
+              <input type="number" placeholder="0.0%" id="button_swap_pFrom">
+              <button class="buttonLBM" id="buttonLBM"><img src="/images/Logo.png" class="logoLBM">LBM<i class="fa-solid fa-angle-down"></i></button>
+            </div>
+
+          </div>
+
+          <div class="arrowDownTo">
+            <p><i class="fa-solid fa-arrow-down"></i></p>
+          </div>
+
+          <div class="toFather">
+
+            <p>To</p>
+
+            <div class="buttonSelectToken_container">
+              <input type="number" placeholder="0.0%" id="button_swap_p">
+              <button class="buttonSelect" id="buttonSelectTo">Select a token<i class="fa-solid fa-angle-down"></i></button>
+            </div>
+
+          </div>
+
+          <div class="buttonConfirm_container">
+            <button class="buttonConfirm" onclick="swapAlert()">Confirm</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="containerInfoSwap">
+        <div class="infoSwap">
+
+          <div class="infoLines">
+            <p>Minimum received <img src="/images/Copy.png" alt="copy"></p>
+            <p>0 LBM</p>
+          </div>
+
+          <div class="infoLines">
+            <p>Inpact on prices <img src="/images/Copy.png" alt="copy"></p>
+            <p class="impactOnPrices">
+              <0.01% </p>
+          </div>
+
+          <div class="infoLines">
+            <p>Fee on dealer liquidity <img src="/images/Copy.png" alt="copy"></p>
+            <p>0 USDC</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="needHelp">
+
+        <img src="/images/needHelp.png" alt="" class="needHelpIMG">
+
+      </div>
+    </div>
+
+    <div class="overlaySwapConfig" id="overlaySwapConfig">
+
+      <div class="popUpSwapConfig" id="popUpSwapConfig">
+        <div class="containerCross">
+          <i class="fa-solid fa-xmark" id="getInTouch"></i>
+        </div>
+        <h1 class="title-setting">Swap Setting</h1>
+        <p class="slippage">Slippage tolerance <img src="/images/Copy.png" alt="copy"></p>
+        <div class="toleranceList">
+
+          <button>0.1%</button>
+          <button>0.5%</button>
+          <button>1%</button>
+          <button class="buttonPersonal"><input type="number" placeholder="1.00%" class="placeholderButton"></button>
+
+        </div>
+
+        <p class="slippage">Transaction delaine <img src="/images/Copy.png" alt="copy"></p>
+
+        <div class="listTime">
+          <p><input type="number" placeholder="20" class="placeholderMinutes"></p>
+          <p>minutes</p>
+
+        </div>
+
+        <h1 class="title-setting">Interface setting</h1>
+
+        <p class="slippage">Slippage tolerance <img src="/images/Copy.png" alt="copy">
+
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"> </span>
+          </label>
+        </p>
+
+        <p class="slippage">Slippage tolerance <img src="/images/Copy.png" alt="copy">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"> </span>
+          </label>
+        </p>
+
+        <div class="buttonConfirm_container">
+
+          <button class="buttonConfirm" id="closeConfirmConfig">Confirm</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="overlaySelectFrom" id="overlaySelectFrom">
+
+      <div class="popUpSelectFrom" id="popUpSelectFrom">
+
+        <div class="containerCross">
+          <i class="fa-solid fa-xmark" id="selectFrom"></i>
+        </div>
+      
+        <div class="containerTitleSelectFrom">
+          <h1>Swap</h1>
+        </div>
+        <div class="searchBarContainer">
+          <input type="search" name="" id="searchBar" placeholder="Find name or insert adress">
+        </div>
+
+        <div class="listCrypto">
+
+          <%- include('./partials/listCrypto.ejs') -%>
+
+            <%- include('./partials/listCrypto.ejs') -%>
+
+              <%- include('./partials/listCrypto.ejs') -%>
+
+        </div>
+        <div class="containerConfirmSelectFrom">
+          <button class="closeSelectFrom" id="closeConfirmFrom">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlaySelectFrom" id="overlaySelectTo">
+
+      <div class="popUpSelectFrom" id="popUpSelectTo">
+        <div class="containerCross">
+          <i class="fa-solid fa-xmark" id="selectTo" ></i>
+        </div>
+        <div class="containerTitleSelectFrom">
+          <h1>Swap</h1>
+        </div>
+        <div class="searchBarContainer">
+          <input type="search" name="" id="searchBar" placeholder="Find name or insert adress">
+        </div>
+
+        <div class="listCrypto">
+
+          <%- include('./partials/listCrypto.ejs') -%>
+
+            <%- include('./partials/listCrypto.ejs') -%>
+
+              <%- include('./partials/listCrypto.ejs') -%>
+
+        </div>
+        <button class="closeSelectFrom" id="closeConfirmTo">Confirm</button>
+      </div>
+
+    </div>
+
+    <div class="overlayAlertSwap" id="overlayAlertSwap">
+      <div class="popUpAlertSwap" id="popUpAlertSwap">
+        <div class="crossContainer">
+          <i class="fa-solid fa-xmark" id="crossAlertSwap"></i>
+        </div>
+
+        <div class="containerElements">
+          <img src="/images/succes.png" alt="succesLogo">
+          <h3 class="grayText">¡Ready!</h3>
+          <p class="subTextAlert">Your swap has done!</p>
+        </div>
+        <button class="confirmSwapButton" onclick="swapAlert()">Confirm</button>
+      </div>
+    </div>
+
+    <script src="/javascripts/swapPopUps/popUpSwapConfig.js"></script>
+    <script src="/javascripts/swapPopUps/popUpSelectFrom.js"></script>
+    <script src="/javascripts/swapPopUps/popUpSelectTo.js"></script>
+    <script src="/javascripts/partials/alerts/swap.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/javascripts/sweetAlert.js"></script>
+</body>
+
+</html>

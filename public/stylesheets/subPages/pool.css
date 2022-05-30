@@ -1,0 +1,112 @@
+body {
+    background-color: #c0c0c0;
+    font-family: 'Montserrat';
+}
+
+.popup-class {
+    border-radius: 16px!important;
+    font-family: 'Inter'!important;
+}
+
+.grey-title-box {
+    cursor: pointer;
+    border: 1px solid #E5E7EB;
+    background: #E5E7EB;
+    color: #6f7785;
+    border-radius: 6px;
+    padding: 3px;
+    font-family: 'Inter';
+}
+
+.orange-title-box {
+    cursor: pointer;
+    color: #F99B17;
+    border: 1px solid #E5E7EB;
+    background: #FFF1F2;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.poolsContainer{
+    background-color: white;
+    color:black;
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-left:20%;
+    margin-right:20%;
+    border-radius: 32px;
+    padding: 2%;
+}
+
+.poolFather h1 {
+    color: #374151;
+}
+
+.subTextPoolTittle{
+    text-align: right;
+}
+
+.libertum {
+    padding: 20px;
+    font-size: 18px
+}
+
+table {
+    border-spacing: 30px;
+}
+
+table td{   
+    text-align: center;
+    font-weight: bold;
+}
+
+table th {
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.tdContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdContainer img{
+    margin-right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.nameCrypto{
+    text-align: left!important;
+}
+
+.manager-detail {
+    background: #F9FAFB;
+    font-weight: bold;
+    border-radius: 6px;
+    border:1px solid #E5E7EB;
+    cursor: pointer;
+}
+
+.manager-detail:hover{
+    background-color: #FFF1F2;
+}
+
+
+.needHelp{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.subTextPoolTittle input {
+    width: 350px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 100px;
+    background: #F9FAFB;
+    border: 0.6px solid #E5E7EB;
+    border-radius: 12px;
+}
+

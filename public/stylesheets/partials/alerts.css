@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:500');
+
+/*alerta en swap*/
+
+.overlayAlertSwap{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayAlertSwap.active {
+    visibility: visible;
+}
+
+.popUpAlertSwap{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.crossContainer{
+    text-align: right;
+}
+
+.containerElements{
+    text-align: center;
+}
+
+.confirmSwapButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+.grayText{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color: #9CA3AF;
+    margin-top: 20px;
+}
+
+.subTextAlert{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 50px;
+}
+
+/*Alerta en Pool*/
+
+.overlayAlertPool{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayAlertPool.active {
+    visibility: visible;
+}
+
+.popUpAlertPool{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.confirmPoolButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+
+/***  ALERTAS EN BORROWING  ***/
+
+/*Withdraw alert*/
+
+.overlayAlertWithdraw{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.overlayAlertWithdraw.active {
+    visibility: visible;
+}
+
+.popUpAlertWithdraw{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.confirmWithdrawButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+/*Supply alert*/
+
+.overlayAlertSupply{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.overlayAlertSupply.active {
+    visibility: visible;
+}
+
+.popUpAlertSupply{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.confirmSupplyButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+/*borrow alert*/
+
+.overlayAlertBorrow{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.overlayAlertBorrow.active {
+    visibility: visible;
+}
+
+.popUpAlertBorrow{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.confirmBorrowButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+/*refund alert*/
+
+.overlayAlertRefund{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.overlayAlertRefund.active {
+    visibility: visible;
+}
+
+.popUpAlertRefund{
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: #000000;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+}
+
+.confirmRefundButton{
+    font-size: 20px;
+    color: #F7931A;
+    width: 95%;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF1F2;
+}
+
+
+
+/*animaciones al abrir*/
+.popUpAlertSwap.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpAlertPool.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpAlertWithdraw.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpAlertSupply.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpAlertBorrow.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popUpAlertRefund.active {
+    opacity: 1;
+    transform: scale(1);
+}

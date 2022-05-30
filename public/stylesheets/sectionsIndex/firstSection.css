@@ -1,0 +1,160 @@
+.section1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 250px;
+    height: 75vh;
+}
+
+.divContainer__section1 {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+
+/* FIRST DIV */
+.h2_divContainer_section1{
+    align-self: center;
+    /* margin: 2%; */
+    font-size: 45px;
+}
+
+.degrade {
+    position: absolute;
+    background-color: #f7941aa9;
+    border: 1px solid #000000;
+    filter: blur(250px);
+    width: 200px;
+    height: 200px;
+    left: 15%;
+}
+
+.coinsContainer {
+    gap: 20px;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+.coin2{
+    margin-top: 50px;
+}
+
+.coinsContainer img{
+    width: 150px;
+    height: 200px;
+}
+
+.subText {
+    color: #979797;
+    font-size: 20px;
+    margin: 30px 0 10px;
+}
+
+.buttonEnter {
+    margin: 5px;
+    font-size: 16px;
+    padding: 9px 18px;
+    background-color: #F7931A;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonEnter a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.buttonEnter:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+.buttonRead{
+    margin: 5px;
+    font-size: 16px;
+    padding: 9px 18px;
+    background-color: rgb(34, 33, 33);
+    color: #F7931A;
+    border: 1px solid #F7931A;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+.buttonRead a {
+    text-decoration: none;
+    color: #F7931A;
+}
+
+.buttonRead:hover {
+    color: white;
+    background-color: rgb(255, 174, 0);
+}
+
+.div__section1 {
+    max-width:900px ;
+
+}
+
+/* SECOND DIV */
+
+.div__section1_img {
+    width: 450px;
+}
+
+.div__section1_img img {
+    /* width: 100%; */
+    height: auto;
+}
+
+.scrollArrow{
+    height: 60px;
+    position:absolute;
+    left: 50%; 
+    bottom: 20px; 
+    cursor: pointer;
+}
+
+#arrowDown{
+    font-size: 30px;
+    color:orange;
+    animation:arrow 1s infinite ;
+}
+
+@keyframes arrow{
+0%{opacity: 0%;}
+25%{transform: translateY(-20px);opacity: 100%;}
+100%{opacity: 10%;}
+}
+
+
+@media screen and (max-width: 1600px) {
+    .coinsContainer img {
+        width: 120px;
+        height: 150px;
+    }
+    .h2_divContainer_section1 {
+        align-self: center;
+        /* margin: 2%; */
+        font-size: 32px;
+    }
+    .section1 {
+        width: 80%;
+        margin: auto;
+        margin-top: 150px;
+        height: 70vh;
+    }
+    .scrollArrow {
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        /* bottom: 80px; */
+        cursor: pointer;
+    }
+}

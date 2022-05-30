@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/stylesheets/partials/navbartwo.css">
+    <link rel="stylesheet" href="/stylesheets/partials/walletPopUp.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a7a7476959.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container_header_1">
+            <img class="logo" src="images/Logo.png" alt="logo">
+            <h1><a href="/">LIBERTUM</a></h1>
+        </div>
+        <nav class="navBar">
+            <ul class="nav__links">
+                <li class="nav__li"><a href="/swap">Swap</a></li>
+                <li class="nav__li"><a href="/borrowing">Borrowing</a></li>
+                <li class="nav__li"><a href="/pools">Pools</a></li>
+                <li class="nav__li"><a href="pdf/Libertum Project writepaper.pdf" download="Libertum Project writepaper.pdf">Whitepaper</a></li>
+                <li class="nav__li"><a href="/#section-4">Roadmap</a></li>
+            </ul>
+        </nav>
+
+        <div class="container_buttons">
+            <p>168.86 USD</p>
+            <button class="button_header_one" id="connectWallet">
+                0xacf8...
+            </button>
+            <a class="button_header_two">
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="overlayConnectWallet" id="overlayConnectWallet">
+
+        <div class="popUpConnectWallet" id="popUpConnectWallet">
+            
+        <div class="connect-wallet">
+            <h1>Connect Wallet</h1>
+            <div class="containerCross">
+                <i class="fa-solid fa-xmark" id="connectWalletButtonClose"></i>
+            </div>
+        </div>
+        
+        <div class="containerSelectWallet">
+
+            <label class="check">
+                <input type="checkbox">
+                <span class="check-1">I have read, understand, and agree to <a>the Terms of Service. </a></span>
+            </label>
+    
+            <div class="listConectWallets">
+                <p><img src="/images/meta-mask.png" alt="copy" class="img-wallet">Meta Mask</p>
+    
+                <p><img src="/images/Binance.png" alt="copy"class="img-wallet">Binance Chain Wallet</p>
+        
+                <p><img src="/images/walletconnect.png" alt="copy"class="img-wallet">WalletConnect</p>
+        
+                <p><img src="/images/portis.png" alt="copy"class="img-wallet">Portis</p>
+            </div>
+
+        </div>
+
+
+
+        </div>
+    
+    </div>
+
+    <script src="/javascripts/partials/popUpConnectWallet.js"></script>
+
+</body>
+</html>
