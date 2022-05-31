@@ -33,6 +33,7 @@ var abrirPopUpManagerPool = document.getElementById('managerPopUpOpen'),
             document.getElementById('popUpManagerPoolContent').classList.add('active')
             document.getElementById('popUpManagerPoolContent2').classList.add('active')
             titleManagerPopUp.innerText = "Remove liquidity"
+            document.getElementById('changeContent').checked = true
         }
         
         overlayDetailPool.classList.remove('active')
