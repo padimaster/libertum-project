@@ -5,6 +5,8 @@ var abrirPopUpManagerPool = document.getElementById('managerPopUpOpen'),
     cerrarCrossButtonPull = document.getElementById('closeManagerPull')
     titleManagerPopUp = document.getElementById('titleManagerPopUp')
 
+    cerrarPopUpManagerPoolRemove = document.getElementById('buttonConfirmManagerPoolRemove')
+
     supplyPoolDetail = document.getElementById('addLiquidityDetails')
     overlayDetailPool = document.getElementById('overlayDetailPool'),
     popUpAssetsBorrowDetails = document.getElementById('popUpDetailPool'),
@@ -46,6 +48,15 @@ var abrirPopUpManagerPool = document.getElementById('managerPopUpOpen'),
 abrirPopUpManagerPool.addEventListener('click',function(){
     overlayManagerPool.classList.add('active')
     popUpManagerPool.classList.add('active')
+})
+
+
+cerrarPopUpManagerPoolRemove.addEventListener('click',function(){
+    overlayManagerPool.classList.remove('active')
+    popUpManagerPool.classList.remove('active')
+        // //alert
+        // abrirOverlayAlertaPool.classList.add('active')
+        // abrirPopUpAlertaPool.classList.add('active')
 })
 
 cerrarPopUpManagerPool.addEventListener('click',function(){

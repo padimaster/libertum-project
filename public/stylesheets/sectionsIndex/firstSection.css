@@ -89,7 +89,9 @@
 
 .buttonRead a {
     text-decoration: none;
-    color: #F7931A;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter';
 }
 
 .buttonRead:hover {
