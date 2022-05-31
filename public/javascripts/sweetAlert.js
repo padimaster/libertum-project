@@ -84,7 +84,7 @@ function removeLiquidity() {
         position: 'center',
         icon: 'success',
         title: '¡Ready!',
-        text: 'Your ETH remove is 0.0001110!',
+        text: 'Your ETH remove liquidity is 0.0001110!',
         confirmButtonColor: "#F7931A",
         customClass: {
             popup: 'popup-class',
