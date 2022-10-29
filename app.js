@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var swapRouter = require('./routes/swap');
 var borrowingRouter = require('./routes/borrowing');
 var poolsRouter = require('./routes/pools');
+var marketRouter = require('./routes/market');
 var app = express();
 
 // view engine setup
@@ -23,9 +24,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/', swapRouter)  
-app.use('/',borrowingRouter)
-app.use('/',poolsRouter)
+app.use('/', swapRouter);
+app.use('/', borrowingRouter);
+app.use('/', poolsRouter);
+app.use('/', marketRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
