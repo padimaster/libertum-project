@@ -1,6 +1,6 @@
 body {
-    background-color: #c0c0c0;
-    font-family: 'Montserrat';
+    background-color: #dbdbdb;
+    font-family: "Montserrat";
 }
 
 .marketSecondSection {
@@ -55,4 +55,69 @@ body {
 
 .recentlyTitle {
     text-align: left;
+}
+
+/* Third Section */
+
+.marketThirdSection {
+    display: flex;
+    margin: 4rem 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactContainer {
+    height: 482px;
+    width: 1300px;
+    padding: 60px 90px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    background-color: gray;
+    background-image: url("../../images/contactBanner.png");
+    border-radius: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 40px;
+}
+
+.contactContainer button {
+    font-size: 16px;
+    padding: 5px 35px;
+    background-color: #f7931a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contactContainer button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 3px;
+}
+
+.contactContainer button:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+.contactContainer h3 {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 65px;
+}
+
+.contactContainer h4 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
 }
